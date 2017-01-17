@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+.box {
+  float: left;
+  width: 32.3%;
+  height: 0;
+  margin: 0.5%;
+  padding: 0 0 32%;
+  background-color: orange;
+  border-radius: 6px;
+}
+.btn {
+  width:49%;
+  padding: 3% 0;
+  margin: 5% 0;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}
