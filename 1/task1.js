@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/1/15.
  */
-
+/* 获取box数组 */
 var arr = document.getElementsByClassName("box");
 var l = arr.length;
 
@@ -49,6 +49,7 @@ function randomBackground() {
 
 var intMain;
 function start(){
+    randomBackground();
     intMain = setInterval(randomBackground,1000);
     // btnStart.onclick = false;
     document.getElementById("btnStart").disabled=true;

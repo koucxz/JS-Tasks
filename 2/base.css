@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 3.2rem;
+}
+
+button {
+	cursor: pointer;
+}
+.header {
+	color: #fff;
+	text-align: center;
+	background: #29bde0;
+}
+
+.main {
+	overflow: hidden;
+	text-align: center;
+	background: #f0f0f0;
+}

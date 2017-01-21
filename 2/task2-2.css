@@ -1,0 +1,185 @@
+.header h3 {
+  display: inline-block;
+  padding: 17px 0;
+  width: 80%;
+  font-size: 34px;
+}
+@media screen and (max-width: 480px){
+  .header h3{
+    width:70%;
+  }
+}
+.header img {
+  vertical-align: top;
+  padding: 14px 0;
+  height: 40px;
+  width: auto;
+}
+
+.roles {
+  margin: 5% auto 1%;
+  width: 94.9%;
+  background: #fbfbfb;
+}
+
+.ratio {
+  float: left;
+  width: 20.6%;
+  padding: 10% 0;
+  background: white;
+  box-sizing: border-box;
+  border-right: 2px solid #d9d9d9;
+}
+@media screen and (max-width: 600px) {
+  .ratio {
+    padding:22% 0;
+  }
+}
+
+.ratio p {
+  margin: 0 auto;
+  width: 4rem;
+  font-size: 3.6rem;
+  color: #444444;
+}
+
+.role {
+  float: left;
+  padding: 3% 0;
+  width: 79.4%;
+  color: #29bde0;
+  list-style: square inside;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.role li {
+  float:left;
+  padding: 5% 0;
+  width: 50%;
+  font-size: 2.6rem;
+  color: #29bde0;;
+}
+@media screen and (max-width: 600px) {
+  .role li {
+    width: 100%;
+  }
+}
+.role span {
+  margin-left: -2rem;
+  color: #a1a1a1;
+}
+
+.role input {
+  vertical-align: top;
+  margin: 0 0.2rem;
+  width: 3rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 2.6rem;
+  background: transparent;
+  border: none;
+}
+
+.setbar {
+  float: left;
+  margin-top: 2%;
+  width: 79.4%;
+}
+.setbar button {
+  margin: 4% 0;
+  font-size: 2.8rem;
+  color: #29bde0;
+  background: transparent;
+}
+.setbar img{
+  padding-left: 1rem;
+}
+
+.words {
+  margin: 1% auto;
+  width: 94.9%;
+  background: #fbfbfb;
+}
+.words p {
+  display: inline-block;
+  padding: 3% 0;
+  margin: 0 auto;
+  width: 45%;
+  font-size: 2.8rem;
+  color: #d7d7d7;
+  border-bottom: 2px solid #f0f0f0;
+}
+.words input {
+  vertical-align: top;
+  margin: 0 0.2rem;
+  width: 40%;
+  height: 2.7rem;
+  text-align: left;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+}
+@media screen and (max-width: 600px) {
+  .words p {
+    width: 90%;
+  }
+}
+
+
+.player-nums{
+  margin: 1% auto;
+  text-align: left;
+  width: 94.9%;
+  font-size: 2.8rem;
+  background: #fbfbfb;
+}
+.player-nums p{
+  padding:5%;
+}
+.player-nums .players-no {
+  vertical-align: top;
+  margin: 0 0.2rem;
+  width: 10%;
+  height: 2.7rem;
+  text-align: center;
+  font-size: 2.6rem;
+  background: #f4f5f5;
+  border: none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  width:90%;
+  margin-left: 5%;
+  vertical-align: top;
+  outline: 0;
+  background: none;
+}
+
+input[type=range]:focus,
+input[type=range]:active {
+  background: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  margin: 15px 0;
+  height: 6px;
+  background: #fcc671;
+}
+
+/*滑块*/
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -15px;
+  height: 36px;
+  width: 62px;
+  border: 3px solid #fcc671;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #fff;
+}
+
