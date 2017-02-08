@@ -18,8 +18,6 @@ button {
 	background: #29bde0;
 }
 
-.main {
-	overflow: hidden;
-	text-align: center;
-	background: #f0f0f0;
+body, h1, h2, h3, h4, h5, h6, p, button {
+	letter-spacing: 2px;
 }

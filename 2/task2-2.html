@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="header">
-	<img src="img/back.png" style="transform:scaleX(-1);">
+	<a href="../2/task2-1.html"><img src="img/back.png" style="transform:scaleX(-1);"></a>
 	<h3>游戏设定</h3>
 	<img src="img/help.png">
 </div>
@@ -19,21 +19,24 @@
 	<div class="roles clearfix">
 		<div class="ratio"><p>玩家配比</p></div>
 		<ul class="role">
-      <li><span>杀&emsp;手<label><input type="number" class="player" value="5" oninput="sumPlayer()"></label>人</span></li>
-			<li><span>警&emsp;察<label><input type="number" class="player" value="1" oninput="sumPlayer()"></label>人</span></li>
-			<li><span>医&emsp;生<label><input type="number" class="player" value="1"></label>人</span>	</li>
-			<li><span>水&emsp;民<label><input type="number" class="player" value="3"></label>人</span></li>
+      <li><span>杀&emsp;手<label><input type="number" name="player" class="player" value="3"></label>人</span></li>
+			<li><span>警&emsp;察<label><input type="number" name="player" class="player" value="1"></label>人</span></li>
+			<li><span>医&emsp;生<label><input type="number" name="player" class="player" value="1"></label>人</span>	</li>
+			<li><span>水&emsp;民<label><input type="number" name="player" class="player" value="7"></label>人</span></li>
 		</ul>
-		<div class="setbar"><button type="button" id="set" value="read" onclick="readwrite()">点击设置</button><img src="img/pencil.png"></div>
+		<div class="setbar"><button type="button" id="set" value="read">点击设置</button><img src="img/pencil.png"></div>
 	</div>
 	<div class="words">
-    <p>杀手词组：<label><input type="text" placeholder="隐藏身份"></label></p><p>水民词组：<label><input type="text" placeholder="指认杀手"></label></p>
-		<p>医生词组：<label><input type="text" placeholder="救好身份"></label></p><p>警察词组：<label><input type="text" placeholder="分享信息"></label></p>
+    <p>杀手词组：<label><input name="word" type="text" value="隐藏身份"></label></p><p>水民词组：<label><input type="text" name="word" value="指认杀手"></label></p>
+		<p>医生词组：<label><input name="word" type="text" value="救好身份"></label></p><p>警察词组：<label><input type="text" name="word" value="分享信息"></label></p>
 	</div>
   <div class="player-nums">
-    <p>玩家人数<label><input type="number" Id="player-no" class="players-no" oninput="slide()"></label>人</p>
-    <label><input type="range" Id="range" min="6" max="18" step="1" onchange="change()"></label>
+    <p>玩家人数<label><input type="number" id="player-no" class="players-no" min="6"></label>人</p>
+    <label><input type="range" id="range" min="6" max="18" step="1"></label>
   </div>
+</div>
+<div class="footer">
+	<button id="nextpage">去发牌</button>
 </div>
 <script src="task2-2.js"></script>
 </body>

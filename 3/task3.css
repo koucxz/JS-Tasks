@@ -1,0 +1,77 @@
+.header {
+  border-bottom: 2px solid #74d4eb;
+}
+.header h3 {
+  display: inline-block;
+  padding: 17px 0;
+  width: 80%;
+  font-size: 34px;
+}
+@media screen and (max-width: 480px){
+  .header h3{
+    width:70%;
+  }
+}
+.header img {
+  vertical-align: top;
+  padding: 14px 0;
+  height: 40px;
+  width: auto;
+}
+.container {
+  padding: 10% 0;
+  text-align: center;
+  background: #29bde0;
+}
+.content {
+  position: relative;
+  margin: 0 15%;
+  background: #ffedc5;
+  border: 6px solid white;
+}
+.content-flop {
+  margin: 38.9% auto;
+  width: 70%;
+  font-size: 40px;
+}
+.content-role {
+  padding: 12.5% 0 25.5%;
+}
+.role {
+  padding: 9.5% 0 6%;
+  color: #29bde0;
+}
+.word {
+  padding-bottom: 8%;
+  color: #f56b81;
+  border-bottom: 2px solid white;
+}
+.tip {
+  padding: 8% 1.8% 0;
+  text-align: left;
+  font-size: 26px;
+  color: #fca000;
+}
+.content .order {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  margin-left: -35px;
+  width: 70px;
+  height: 70px;
+  color: #f56b81;
+  font-size: 40px;
+  line-height: 70px;
+  background: #fff;
+  border: 3px solid #ffedc5;
+  border-radius: 50%;
+}
+
+.check {
+  padding: 3% 8%;
+  margin-top: 18%;
+  max-width: 640px;
+  font-size: 48px;
+  color: white;
+  background: #fbb435;
+}
