@@ -1,0 +1,62 @@
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+button, /*重置按钮元素*/
+th, td, tr { /* table elements 表格元素 */
+	margin: 0;
+	padding: 0;
+	border:0;
+	outline: 0;
+	font-weight: normal;
+}
+/* 设置默认字体 */
+body, button, input, select, textarea {
+	font-family: "Hiragino Sans GB","Microsoft Yahei",serif;
+	line-height:1;
+	outline:none;
+}
+html {
+	font-size: 62.5%;
+	font-family: "Hiragino Sans GB","Microsoft Yahei",serif;
+}
+
+@media (min-width: 400px) and (max-width: 480px) {
+	html {
+		font-size: 50%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	html {
+		font-size: 40%;
+	}
+}
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none; }
+img{
+	max-width: 100%;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after { clear: both; } /* For IE 6/7 (trigger hasLayout) */
+.clearfix { zoom: 1; }

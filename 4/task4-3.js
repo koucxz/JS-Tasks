@@ -105,7 +105,7 @@ $("#nextPage").click(function() {
             deadStr = JSON.stringify(DeadArr);
             sessionStorage.deadsArr = deadStr;
         }
-        location.href = "task4-4.html";}
+        location.href = "task4-5.html";}
 });
 
 
