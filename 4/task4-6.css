@@ -1,0 +1,132 @@
+.header {
+	letter-spacing:0.3rem;
+	border-bottom:1px #74d4eb solid;
+}
+.header h3 {
+	display: inline-block;
+	padding: 17px 0;
+	width: 77%;
+	font-size: 34px;
+}
+@media screen and (max-width: 480px){
+	.header h3{
+		width:65%;
+	}
+}
+.header img {
+	vertical-align: top;
+	padding: 14px 0;
+	max-width: 45px;
+}
+
+.main-top {
+	width: 100%;
+	text-align: center;
+	background: #29bde0;
+}
+.winning {
+	margin: 0 auto;
+	padding: 4% 0;
+	width: 352px;
+	background-image: url(img/winning.png);
+	background-size: 100%;
+	background-position: 0 40%;
+	background-repeat: no-repeat;
+}
+.winning .txt {
+	padding: 141px 0 23px;
+	width: 100%;
+	font-size: 48px;
+	color: white;
+}
+.wintip {
+	margin: 0 auto;
+	width: 75.2%;
+	font-size: 3.3rem;
+	color: #ffc865;
+}
+.gameinfo {
+	padding: 9% 0 4%;
+	margin: 0 auto;
+	text-align: left;
+	width: 75.2%;
+	font: 2.6rem/1.4 serif;
+	color: white;
+}
+.gameplayers {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.main-bottom {
+	padding-bottom: 140px;
+}
+.main-bottom li {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+.gamerun {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 1.5% 0;
+	width: 75.2%;
+}
+.gamerun .days {
+	display: inline-flex;
+	font-size: 3rem;
+	color: #515151;
+}
+.gamerun .daytime {
+	display: inline-flex;
+	font-size: 2rem;
+	color: #c7c7c7;
+}
+.daynight {
+	display: inline-flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	padding: 2.5% 0 5%;
+	width: 75.2%;
+	font: 2.6rem/1.4 serif;
+	color: #a6a6a6;
+}
+
+
+.footer {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	height: 130px;
+	width: 100%;
+	max-width: 640px;
+	background: rgba(153,223,240,0.5);
+}
+.footer button {
+	display :inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 42.5%;
+	height: 8.4rem;
+	color: white;
+	font-size: 4rem;
+	border-radius: 0.5rem;
+}
+.footer a {
+	color: white;
+}
+.footer button.onemore {
+	background: rgba(246,111,111,1);
+}
+.footer button.sharing{
+	background: rgba(251,180,53,1);
+}

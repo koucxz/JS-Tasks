@@ -20,7 +20,7 @@ var word = $(".word"); //词组内容
 var buttonCheck = $('.check'); //按钮内容
 
 //切换到身份页
-role.hide(); //隐藏角色页
+$(document).ready(role.hide()); //隐藏角色页
 function jumpToRole() {
     flop.hide(); //隐藏翻页页面
     role.show(); //显示角色页
@@ -48,7 +48,7 @@ function jumpToNext() {
 console.log(TotalArr.length);
 function check() {
     if (n == 2 * TotalArr.length) {
-        location.href = "/4/task4.html";
+        location.href = "../4/task4.html";
     }
     else {
         if (n % 2 == 1){jumpToRole()}

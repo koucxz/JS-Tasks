@@ -1,0 +1,42 @@
+.header {
+  border-bottom: 2px solid #74d4eb;
+}
+.header h3 {
+  display: inline-block;
+  padding: 17px 0;
+  width: 80%;
+  font-size: 34px;
+}
+@media screen and (max-width: 480px){
+  .header h3{
+    width:70%;
+  }
+}
+.header img {
+  vertical-align: top;
+  padding: 14px 0;
+  height: 40px;
+  width: auto;
+}
+.main {
+  padding: 10% 0;
+  text-align: center;
+  font-size: 27px;
+  color: white;
+  background: #29bde0;
+}
+
+.dead{
+  padding: 9% 0;
+  margin-bottom: 4%;
+  border-bottom: 1px solid #87daee;
+}
+
+.check {
+  padding: 3%;
+  margin-top: 2%;
+  width: 70%;
+  font-size: 40px;
+  color: white;
+  background: #fbb435;
+}

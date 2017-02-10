@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scalable=1,minimun-scale=0.5,maximum-scale=2">
+	<title>Game Assist</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="base.css">
+	<link rel="stylesheet" href="task4-3.css">
+	<script src="../jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div class="header">
+	<a href="task4-2.html"><img src="img/list.png"></a>
+	<h3>投票</h3>
+	<img src="img/close.png">
+</div>
+<div class="main">
+	<div class="voteline">
+		杀手请睁眼，<br/>
+		杀手请选择要杀的对象
+		<audio src="fncfr.mp3" controls="controls" preload id="music" hidden>
+		</audio>
+		<button class="triangle-circle">
+			<span class="triangle-right"></span>
+		</button>
+		<div class="triangle-down"></div>
+	</div>
+	<div class="votetip">点击下方玩家，标记杀手杀死的玩家</div>
+	<div class="statusblocks" id="sourcediv">
+			<div class="statusblock border-white">
+					<div class="status">水民</div>
+					<div class="number">1号</div>
+					<div class="icon">
+							<span class="icon1"></span><span class="icon2"></span><span class="icon3"></span><span class="icon4"></span>
+					</div>
+			</div>
+	</div>
+</div>
+<div class="footer">
+		<button id="nextPage">确定</button>
+	<script src="task4-3.js"></script>
+</div>
+</body>
+</html>

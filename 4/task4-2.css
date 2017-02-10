@@ -1,0 +1,93 @@
+.header h3 {
+	display: inline-block;
+	padding: 17px 0;
+	width: 80%;
+	font-size: 34px;
+	letter-spacing: 3px;
+}
+@media screen and (max-width: 480px){
+	.header h3{
+		width:70%;
+	}
+}
+.header img {
+	vertical-align: top;
+	padding: 14px 0;
+}
+
+.main {
+	background: #f0f0f0;
+}
+
+.content {
+	margin: 5.5% auto;
+	width: 98%;
+	font-size: 30px;
+	background: #f7f7f7;
+	border: 1px solid #c9c9c9;
+}
+
+.content h4 {
+	position: relative;
+	padding: 4.5% 0;
+	color: #29bde0;
+	letter-spacing: 2px;
+	border-bottom: 1px solid #c9c9c9;
+}
+.content h4 img {
+	position: absolute;
+	right: 3%;
+	padding: 1% 0;
+}
+
+.main-right {
+	position: relative;
+	padding-bottom: 11.6%;
+	margin-left: 10%;
+	letter-spacing: 2px;
+	border-left: 2px solid #c9c9c9;
+}
+
+.border-circle {
+	position: absolute;
+	left: -30px;
+	width: 60px;
+	height: 60px;
+	padding-top: 12px;
+	border: 2px solid #c9c9c9;
+	border-radius: 50%;
+	box-sizing: border-box;
+	box-shadow: 0 0 0 30px #f7f7f7 inset;
+}
+.moon {
+	top: 6.5%;
+}
+.sun {
+	top: 58%;
+}
+.main-right ul{
+	position: relative;
+	padding: 5.6% 0 2%;
+	margin-left: 52px;
+	width: 80%;
+}
+
+.main-right li{
+	padding: 5.5% 0;
+	margin: 4.2% 0;
+	color: white;
+	background: #24a7c6;
+	cursor: pointer;
+}
+
+.main-right li:before {
+	content:"";
+	position: absolute;
+	right: 100%;
+	margin-top: 5px;
+	width: 0;
+	height: 0;
+	border-top: 11px solid transparent;
+	border-right: 15px solid #24a7c6;
+	border-bottom: 11px solid transparent;
+}
