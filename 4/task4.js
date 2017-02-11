@@ -22,7 +22,7 @@ function cloneDiv(){
 }
 $(document).ready(cloneDiv());
 
-// window.onunload = function() {
+window.onunload = function() {
         var start;
         start = new Date();
         sessionStorage.setItem('startTime',start.getTime());
@@ -30,6 +30,6 @@ $(document).ready(cloneDiv());
         var timeArr = [];
         timeStr = JSON.stringify(timeArr);
         sessionStorage.timesArr = timeStr;
-    // };
+    };
 
 
