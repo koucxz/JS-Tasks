@@ -21,3 +21,15 @@ function cloneDiv(){
     }
 }
 $(document).ready(cloneDiv());
+
+// window.onunload = function() {
+        var start;
+        start = new Date();
+        sessionStorage.setItem('startTime',start.getTime());
+        //存储timeArr数组
+        var timeArr = [];
+        timeStr = JSON.stringify(timeArr);
+        sessionStorage.timesArr = timeStr;
+    // };
+
+

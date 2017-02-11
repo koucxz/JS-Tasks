@@ -145,9 +145,10 @@ function distribute() {
     }
     totalRoleArr.shuffle();
     //存储内容至下个页面
-    var str;
     str = JSON.stringify(totalRoleArr);
     localStorage.totalArr = str;
+    str1 = JSON.stringify(roleArr);
+    localStorage.numRoleArr = str1;
     localStorage.setItem('word1',roleWord[0].value);
     localStorage.setItem('word2',roleWord[1].value);
     localStorage.setItem('word3',roleWord[2].value);

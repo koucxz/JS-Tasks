@@ -37,18 +37,19 @@ function cloneDiv(){
         document.getElementsByClassName("status")[i].innerHTML = TotalArr[i];
         document.getElementsByClassName("number")[i].innerHTML = i +1 + "号";
     }
+    //标记已死亡玩家
+    for (i=0;i<DeadArr.length;i++) {
+        document.getElementsByClassName("statusblock")[DeadArr[i]].className = "statusblock border-red";
+    }
 }
 $(document).ready(cloneDiv());
 
-//标记已死亡玩家
-for (i=0;i<DeadArr.length;i++) {
-    document.getElementsByClassName("statusblock")[DeadArr[i]].className = "statusblock border-red";
-}
+
 
 //点击后选中，若是杀手则提示请选择其他玩家
 var boxs = $(".statusblock");
-boxs.each(function() {
-    var boxNumber = $(".main .statusblock").index(this); //用于判断角色是否存活
+$().ready(boxs.each(function() {
+    var boxNumber = $(".main .statusblock").index(this); //判断角色在数组位置
     $(this).click(function (){
         if ( $.inArray(boxNumber,DeadArr) != -1) {
             alert("英雄放我一马")
@@ -59,7 +60,7 @@ boxs.each(function() {
             console.log("选中了" + boxNumber);
         }
     })
-});
+}));
 
 // 记录本次死亡的玩家并存储
 $("#nextPage").click(function() {
@@ -72,5 +73,5 @@ $("#nextPage").click(function() {
         DeadArr.push(parseInt(deadBoy)); //将本次死亡角色添加进数组
         deadStr = JSON.stringify(DeadArr);
         sessionStorage.deadsArr = deadStr;
-        location.href = "task4-2.html";}
+        location.href = "task4-4.html";}
 });

@@ -115,18 +115,19 @@
 }
 
 /*投票hover浮动小图标*/
-.statusblocks:hover .icon {
-	visibility: visible;
-}
 .icon {
-	visibility: hidden;
 	position: absolute;
 	bottom: 0;
 	left: 17.1%;
 	width: 68%;
 	height: 3rem;
 }
-
+.hide {
+	visibility: hidden;
+}
+.unhide {
+	visibility: visible;;
+}
 .icon span {
 	display: inline-block;
 	margin-right: 4%;

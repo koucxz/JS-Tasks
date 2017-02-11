@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="base.css">
 	<link rel="stylesheet" href="task4-6.css">
+	<script src="../jquery-3.1.1.min.js"></script>
 </head>
 <body>
 <div class="header">
@@ -17,52 +18,41 @@
 </div>
 <div class="main-top">
 	<div class="winning">
-	 <div class="txt">卧底胜利</div>
+	 <div class="txt"></div>
 	</div>
-	<div class="wintip">
-			太棒了!你知道么？在捉鬼游戏中只有20%的卧底取得游戏最终的胜利哦！
-	</div>
+	<div class="wintip"></div>
 	<div class="gameinfo">
 		<div class="gametime">本次游戏共计用时0小时25分钟</div>
 		<div class="gameplayers">
-				<span>杀&emsp;手0人</span>
-				<span>警&emsp;察1人</span>
-				<span>平&emsp;民6人</span>
+				<span>杀&emsp;手<span class="rolenum"></span>人</span>
+				<span>警&emsp;察<span class="rolenum"></span>人</span>
+				<span>医&emsp;生<span class="rolenum"></span>人</span>
 		</div>
 		<div class="gameplayers">
+				<span>平&emsp;民<span class="rolenum"></span>人</span>
 				<span>狙击手0人</span>
-				<span>医&emsp;生1人</span>
 				<span>&emsp;&emsp;&emsp;&emsp;&ensp;</span>
 		</div>
-		<div>卧底词汇：爱新觉罗</div>
-		<div>水民词汇：努尔哈赤</div>
+		<div>杀手词汇:<span  class="word"></span>&emsp;&ensp;警察词汇:<span  class="word"></span></div>
+		<div>医生词汇:<span  class="word"></span>&emsp;&ensp;水民词汇:<span  class="word"></span></div>
 	</div>
 </div>
 <ul class="main-bottom">
-	<li>
+	<li id="day">
 			<div class="gamerun">
 					<span class="days">第1天</span>
 					<span class="daytime">0小时07分</span>
 			</div>
 			<div class="daynight">
-					<span>晚上：5号被杀手杀死，5号是水民</span>
-					<span>白天：8号被全民投票投死，8号是杀手</span>
-			</div>
-	</li>
-	<li>
-			<div class="gamerun">
-					<span class="days">第2天</span>
-					<span class="daytime">0小时07分</span>
-			</div>
-			<div class="daynight">
-					<span>晚上：5号被杀手杀死，5号是水民</span>
-					<span>白天：8号被全民投票投死，8号是杀手</span>
+					<span class="killevent"></span>
+					<span  class="killevent"></span>
 			</div>
 	</li>
 </ul>
 <div class="footer">
-		<button class="onemore"><a  href="../2/task2-1.html">再来一次</a></button>
+		<button class="onemore">再来一次</button>
 		<button class="sharing">上传并分享</button>
 </div>
+<script src="task4-6.js"></script>
 </body>
 </html>

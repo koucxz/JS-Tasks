@@ -36,9 +36,6 @@ $(document).ready(cloneDiv());
 
 // 非首次跳转至本页面时运行
 var NotFirst = typeof (sessionStorage.deadsArr);
-console.log(typeof (sessionStorage.deadsArr));
-console.log(typeof (typeof (sessionStorage.deadsArr)));
-
 if (NotFirst != "undefined") {
     //获得死亡玩家数组
     DeadStr = sessionStorage.deadsArr;
@@ -66,8 +63,10 @@ boxs.each(function() {
                     alert("不能杀同伴，请选择其他玩家")
                 }
                 else{
-                    $(".statusblock").addClass("border-white").removeClass("border-gray");
-                    $(this).addClass("border-gray").removeClass("border-white");
+                    $(".statusblock").addClass("border-white").removeClass("border-gray")
+                        .find(".icon").addClass("hide").removeClass("unhide");
+                    $(this).addClass("border-gray").removeClass("border-white")
+                        .find(".icon").addClass("unhide").removeClass("hide");
                     console.log("选中了" + boxNumber);
                 }
             }
