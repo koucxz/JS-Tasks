@@ -21,15 +21,17 @@ var dayTime = new Date();
 var duration = dayTime.getTime() - StartTime;
 // 全局变量
 var i;
-//标题
-if(DeadArr.length % 2 == 0) {
-    $("h3").html("投票结果")
-}
-else {
-    $("h3").html("黑夜解密")
-}
-//将玩家死亡信息显示出来
+
+
 $(document).ready(function(){
+    //标题
+    if(DeadArr.length % 2 == 0) {
+        $("h3").html("投票结果");
+    }
+    else {
+        $("h3").html("黑夜解密");
+    }
+    //将玩家死亡信息显示出来
     for (i = 0;i < DeadArr.length;i++) {
         if (i % 2 == 0) {
             $(".dead p").append(DeadArr[i] + 1 +
