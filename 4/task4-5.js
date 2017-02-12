@@ -52,7 +52,7 @@ $().ready(boxs.each(function() {
     var boxNumber = $(".main .statusblock").index(this); //判断角色在数组位置
     $(this).click(function (){
         if ( $.inArray(boxNumber,DeadArr) != -1) {
-            alert("英雄放我一马")
+            alert("该角色已死亡")
         }
         else {
             $(".statusblock").addClass("border-white").removeClass("border-gray");
