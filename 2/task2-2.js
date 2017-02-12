@@ -71,10 +71,16 @@ for (i = 0;i < len;i ++) {
 
 /* 重设四个角色人数函数 */
 function randomRole() {
-    var numOfKiller = Math.ceil(num.value/4);
-    var numOfDoc = Math.ceil(Math.random()*2);
-    var numOfCop = Math.ceil(Math.random()*2);
-    var numOfCitizen = Math.floor(num.value - numOfKiller - numOfDoc - numOfCop);
+    var numOfKiller = Math.floor(num.value/4);
+    var numOfDoc;
+    if (num.value <= 10) {
+        numOfDoc = 1;
+    }
+    else {
+        numOfDoc = 2;
+    }
+    var numOfCop = 1;
+    var numOfCitizen = Math.ceil(num.value - numOfKiller - numOfDoc - numOfCop);
     rolePlayer[0].value = numOfKiller;
     rolePlayer[1].value = numOfCop;
     rolePlayer[2].value = numOfDoc;

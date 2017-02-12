@@ -65,11 +65,6 @@ else {
     $('.wintip').html("本轮游戏共抓住杀手" + RoleArr[0] + "人，共经历了" + dayNum + "个白天，在杀人游戏中击败了67%的玩家")
 }
 
-$(".onemore").click(function() {
-    localStorage.clear();
-    sessionStorage.clear();
-    location = "../2/task2-1.html";
-});
 
 // 转换毫秒获取秒分时的函数
 function  getTimeSecond(sTime) {
@@ -98,3 +93,9 @@ function getTimeHour(hTime) {
 for (i=0;i < TimeArr.length;i++) {
     document.getElementsByClassName("daytime")[i].innerHTML = getTimeHour(TimeArr[i]) + "小时" + getTimeMin(TimeArr[i]) +"分" + getTimeSecond(TimeArr[i]) + "秒";
 }
+
+$(".onemore").click(function() {
+    localStorage.clear();
+    sessionStorage.clear();
+    location = "../2/task2-1.html";
+});
