@@ -101,8 +101,8 @@ function slide() {
     randomRole();
     newArr();
 }
-document.getElementById("player-no").oninput=slide;
 
+document.getElementById("player-no").oninput=slide;
 function alertNum() { //限制输入框输入人数
     while (num.value < 6 || num.value > 18){
         while (num.value < 6) {
