@@ -46,8 +46,6 @@ if (NotFirst != "undefined") {
     }
 }
 
-
-
 //点击后选中，若是杀手则提示请选择其他玩家
 var boxs = $(".statusblock");
 boxs.each(function() {

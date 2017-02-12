@@ -13,8 +13,6 @@ DeadStr = sessionStorage.deadsArr;
 DeadArr = JSON.parse(DeadStr);
 console.log(DeadArr);
 console.log("读取死亡玩家数组" + DeadStr);
-//获得游戏开始时间
-var StartTime = sessionStorage.getItem('startTime');
 //读取timeArr数组
 TimeArrStr = sessionStorage.timesArr;
 TimeArr = JSON.parse(TimeArrStr);
@@ -90,8 +88,11 @@ function getTimeHour(hTime) {
     return hour;
 }
 // 填充时间
-for (i=0;i < TimeArr.length;i++) {
-    document.getElementsByClassName("daytime")[i].innerHTML = getTimeHour(TimeArr[i]) + "小时" + getTimeMin(TimeArr[i]) +"分" + getTimeSecond(TimeArr[i]) + "秒";
+document.getElementsByClassName("daytime")[0].innerHTML = getTimeHour(TimeArr[0]) + "小时" + getTimeMin(TimeArr[0]) +"分" + getTimeSecond(TimeArr[0]) + "秒";
+document.getElementById("totalTime").innerHTML = getTimeHour(TimeArr[TimeArr.length - 1]) + "小时" + getTimeMin(TimeArr[TimeArr.length - 1]) +"分";
+for (i=1;i < TimeArr.length;i++) {
+    document.getElementsByClassName("daytime")[i].innerHTML = getTimeHour(TimeArr[i] - TimeArr[i - 1]) + "小时"
+        + getTimeMin(TimeArr[i] - TimeArr[i - 1]) +"分" + getTimeSecond(TimeArr[i] - TimeArr[i - 1]) + "秒";
 }
 
 $(".onemore").click(function() {
