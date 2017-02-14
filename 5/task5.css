@@ -62,4 +62,8 @@ button {
   color: white;
   background: #03a9f4;
   border-radius: 5px;
+  cursor: pointer;
+}
+.alert {
+  font-size: 20px;
 }
