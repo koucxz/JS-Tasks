@@ -64,7 +64,7 @@ var xhr = createXHR();
 //     var password = $("#password").val();
 //     if (username.length >= 6 && password.length >= 6 && username != password) {
 //         console.log(username,password);
-//         xhr.open("post","a/login",true);
+//         xhr.open("post","/skill-ajax/a/login",true);
 //         xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded" );
 //         xhr.send('mobile='+username+'&pwd='+password);
 //     }
@@ -78,7 +78,7 @@ $("#btn-login").click(  function() {
     var password = $("#password").val();
     $.ajax({
         type: 'Post',
-        url:'a/login',
+        url:'/skill-ajax/a/login',
         dataType: "json",
         data: {
             mobile:username,
@@ -103,3 +103,5 @@ $("#btn-login").click(  function() {
 $("body").keydown(function() {if (event.keyCode==13) { //回车键的键值为13
     $("#btn-login").click();// 调用登录按钮的登录事件
 }});
+
+
