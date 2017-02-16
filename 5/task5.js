@@ -78,7 +78,7 @@ $("#btn-login").click(  function() {
     var password = $("#password").val();
     $.ajax({
         type: 'Post',
-        url:'/skill-ajax/a/login',
+        url:'/a/login',
         dataType: "json",
         data: {
             mobile:username,

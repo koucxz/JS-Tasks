@@ -29,22 +29,23 @@ h3 {
   color: #03a9f4;
 }
 
-ul {
+form {
   margin: 0 auto;
   width: 438px;
 }
-li {
-  margin-top: 20px;
+.form-input {
+  display: inline-block;
+  margin-bottom: 20px;
   padding: 18px 0;
   background: white;
 }
-li span{
+.form-input span{
   display: inline-block;
+  padding: 3px 0;
   width: 40px;
+  vertical-align: top;
 }
-li img {
-  margin-bottom: -3px;
-}
+
 label {
   padding: 6px 0 4px 20px;
   border-left: 1px solid #e8e8e8;
@@ -55,7 +56,7 @@ input {
   border: none;
 }
 button {
-  margin-top: 70px;
+  margin-top: 50px;
   padding: 20px 0;
   width: 438px;
   font-size: 20px;
