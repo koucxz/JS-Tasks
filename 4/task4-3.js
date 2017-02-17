@@ -74,8 +74,10 @@ boxs.each(function() {
                 alert("不能杀同伴，请选择其他玩家")
             }
             else{
-                $(".statusblock").addClass("border-white").removeClass("border-gray");
-                $(this).addClass("border-gray").removeClass("border-white");
+                $(".statusblock").addClass("border-white").removeClass("border-gray")
+                    .find(".icon").addClass("hide").removeClass("unhide");
+                $(this).addClass("border-gray").removeClass("border-white")
+                    .find(".icon").addClass("unhide").removeClass("hide");
                 console.log("选中了" + boxNumber);
             }
         }

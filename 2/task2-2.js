@@ -163,7 +163,10 @@ function distribute() {
     location.href = "../3/task3.html";
 }
 
-window.onload = function() {document.getElementById("nextpage").onclick = distribute;};
+window.onload = function() {
+    localStorage.clear();
+    sessionStorage.clear();
+    document.getElementById("nextpage").onclick = distribute;};
 
 
 
