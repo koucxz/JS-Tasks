@@ -25,7 +25,9 @@ html {
 ul, ol { list-style: none; }
 
 /* 重置文本格式元素 */
-a { text-decoration: none; }
+a {
+	outline: none;
+	text-decoration: none; }
 img{
 	max-width: 100%;
 }

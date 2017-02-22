@@ -51,12 +51,12 @@ var intMain;
 function start(){
     randomBackground();
     intMain = setInterval(randomBackground,1000);
-    // btnStart.onclick = false;
-    document.getElementById("btnStart").disabled=true;
+    btnStart.onclick = false;
+    // document.getElementById("btnStart").disabled=true;
 }
 function stop(){
     clearColor();
     clearInterval(intMain);
-    //btnStart.onclick = ture;
-    document.getElementById("btnStart").disabled=false;
+    btnStart.onclick = true;
+    // document.getElementById("btnStart").disabled=false;
 }
